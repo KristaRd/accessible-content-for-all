@@ -12,15 +12,14 @@
   <header role="banner">
     <h1>The Pangolin</h1>
 
-    <nav>
-      <ul>
-        <li><a href="#">Jump to main content</a></li>
-        <li><a href="#">Jump to navigation</a></li>
-      </ul>
-    </nav>
+    <div aria-hidden="true" hidden>
+      <a href="#main">Jump to main content</a>
+      <a href="#navigation">Jump to navigation</a>
+    </div>
 
     <img src="images/pangolin.jpg" alt="photogragh of two pangolins laying in grass" role="presentation">
-    <nav role="navigation" id="navigation">
+
+    <nav role="navigation" id="navigation" tabindex="0">
       <ul>
         <li><a href="#33">Description</a></li>
         <li><a href="#49">Behaviour</a></li>
@@ -29,9 +28,9 @@
     </nav>
   </header>
 
-  <main role="main" id="main">
+  <main role="main" id="main" tabindex="0">
     <section>
-      <h2>Description</h2>
+      <h2 aria-label="Description of some countries where pangolins are found">Description</h2>
       <p>Some countries where pangolins are found:</p>
       <ul>
         <li>Botswana</li>
@@ -47,10 +46,10 @@
     </section>
 
     <section>
-      <h2>Behaviour</h2>
+      <h2 aria-label="Behavior of pangolins">Behaviour</h2>
       <a href="https://en.wikipedia.org/wiki/Pangolin#Behavior" aria-label="Read more about Pangolin behaviour">Read more</a>
 
-      <h2>Conservation</h2>
+      <h2 aria-label="Conservation of pangolins">Conservation</h2>
       <a href="https://en.wikipedia.org/wiki/Pangolin#Conservation" aria-label="Read more about Pangolin conservation">Read more</a>
     </section>
   </main>
